@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Smart conseil</string>
+    <string name="welcome_joh">Welcome to 4In Shield!\nSign in to continue</string>
+    <string name="signup"><b><u>No account? Sign up</u></b></string>
+    <string name="forgot_password"><u>forgot password ?</u></string>
+    <string name="i_herby_accept_terms_and_conditions">I herby accept <u>terms and conditions</u> </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

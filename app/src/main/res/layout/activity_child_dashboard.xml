@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    tools:context=".ChildDashboard">
+
+
+    <RelativeLayout
+        android:id="@+id/MenuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/menuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/primaryColor"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:src="@drawable/ic_baseline_menu_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins"
+            android:text="Child first name"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:src="@drawable/ic_baseline_account_circle_24" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/MenuBar" />
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/tabBarApp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/primaryColor"
+
+            app:bt_colorInactive="@color/black"
+            app:bt_title="Dashboard" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/primaryColor"
+            app:bt_colorInactive="@color/primaryColor"
+            app:bt_icon="@drawable/ic_baseline_phone_android_24"
+            app:bt_title="Phone Usage" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/primaryColor"
+            app:bt_colorInactive="@color/primaryColor"
+            app:bt_icon="@drawable/ic_baseline_link_24"
+            app:bt_title="Social Media" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/primaryColor"
+            app:bt_colorInactive="@color/primaryColor"
+            app:bt_icon="@drawable/ic_baseline_notifications_active_24"
+            app:bt_title="Phone Usage" />
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+
+</RelativeLayout>
